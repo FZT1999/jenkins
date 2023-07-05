@@ -22,5 +22,8 @@ job('NodeJS Docker example') {
             createFingerprints(false)
             skipDecorate()
         }
+        steps {
+            shell("npm install")
+        }
     }
 }
